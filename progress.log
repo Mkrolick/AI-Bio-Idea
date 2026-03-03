@@ -2,3 +2,55 @@
 # Append-only. Never overwrite previous entries.
 # Format: [DATE] [ITERATION] - What was done, what was learned, what's next
 
+[2026-03-02] [ITERATION 1] - Created project structure and identified 9 research directions:
+  1. rapid-cloning: Cell-free single-pot gene assembly
+  2. vibrio-mutagenesis: V. natriegens continuous mutagenesis for DMS
+  3. direct-protein-synthesis: Template-free protein printer
+  4. ultrafast-pcr: Photonic thermocycling at nanoliter scale
+  5. instant-transformation: Electroporation-free bacterial transformation
+  6. parallel-purification: Acoustic continuous-flow protein purification
+  7. overnight-gene-synthesis: Desktop enzymatic DNA synthesizer with inline QC
+  8. cell-free-prototyping: Cell-free TX-TL with linear DNA for circuit prototyping
+  9. microfluidic-western: 15-minute microfluidic western blot
+  10. multiplexed-assay-droplets: Encoded droplet microreactors for parallel assays (10th, bonus)
+  Key learning: Competition explicitly warns against "hand-wavey" cloud lab/automation proposals.
+  Must focus on specific technical mechanisms. Several paths (cell-free prototyping, overnight gene synthesis)
+  may overlap with existing commercial products — need careful originality checks.
+  Next: Begin literature reviews for each path, starting with the most promising (rapid-cloning, vibrio-mutagenesis, ultrafast-pcr).
+
+[2026-03-02] [ITERATION 2] - Deep literature review completed for 3 paths: rapid-cloning, vibrio-mutagenesis, ultrafast-pcr.
+  KEY FINDINGS:
+  - vibrio-mutagenesis: PREEMPTED by VinORep (Tian/Chin lab, Feb 2026 bioRxiv). Orthogonal continuous evolution
+    in V. natriegens already demonstrated. New function evolved in 16 hours. Originality: 3/10. RECOMMEND PRUNE.
+  - ultrafast-pcr: WELL-PUBLISHED field. Sub-5-min photonic PCR demonstrated by 4+ groups since 2015. NextGenPCR
+    sells 2-minute commercial system. Wittwer did 14.7-second PCR in 2015. 4+ review papers in 2025. Originality: 4/10.
+    RECOMMEND PRUNE unless novel angle found.
+  - rapid-cloning: PROMISING. HyperXpress (2022) and One-Pot GG+TX-TL (2025) do assembly+expression. BUT no one
+    integrates SEQUENCE VERIFICATION inline. Coupling nanopore QC with cell-free assembly is the novel angle.
+    Originality: 6/10, Tractability: 8/10. KEEP AND DEVELOP.
+  Key learning: Many "obvious" speedup ideas are already well-published. Must dig deep before committing. The
+  competition rewards originality — incremental improvements on known approaches will not win.
+  Next: Literature review for remaining paths (direct-protein-synthesis, instant-transformation, parallel-purification,
+  overnight-gene-synthesis, cell-free-prototyping, microfluidic-western, multiplexed-assay-droplets).
+
+[2026-03-03] [ITERATION 3] - Literature review for 3 more paths: direct-protein-synthesis, instant-transformation, parallel-purification.
+  PRUNED: parallel-purification (ARF can't manipulate proteins; His-tag purification already 4-5 min commercially).
+  Now 3 paths pruned total: vibrio-mutagenesis, ultrafast-pcr, parallel-purification.
+  KEY FINDINGS:
+  - direct-protein-synthesis: Flow SPPS (Pentelute 2020) does 164 AA in 6.5 hrs. Chemputer (Cronin 2025) automates
+    multi-step chemical synthesis. Nuclera is CFPS-based, not chemical. Gap: automated pipeline integrating
+    flow SPPS + enzymatic ligation + refolding in one instrument. Best angle: D-proteins/non-canonical AA where
+    CFPS can't compete. Originality: 5/10, Tractability: 6/10.
+  - instant-transformation: Mix & Go solves hands-on time (20 sec). Microfluidic electroporation is well-developed.
+    GENUINE GAP: bacterial mechanoporation (cell squeezing) — zero published work. But cell wall rigidity is a
+    fundamental challenge. Also: IMPRINT (cell-free methylation, Mol Cell 2024) bypasses RM barriers.
+    Originality: 6/10 (mechanoporation angle), Tractability: 5/10.
+  - parallel-purification: PRUNED. ARF too weak for proteins. Bead-conjugation workaround = magnetic beads (already solved).
+  Key learning: For every "speed up X" idea, check if the bottleneck is already solved commercially. VFD-IMAC does
+  4-min purification. Mix & Go does 20-sec transformation. The real bottlenecks are often upstream (gene synthesis
+  turnaround, colony overnight growth) not the technique itself.
+  SURVIVING PATHS (6): rapid-cloning, direct-protein-synthesis, instant-transformation, overnight-gene-synthesis,
+  cell-free-prototyping, microfluidic-western, multiplexed-assay-droplets.
+  Next: Literature reviews for remaining 4 paths (overnight-gene-synthesis, cell-free-prototyping,
+  microfluidic-western, multiplexed-assay-droplets).
+

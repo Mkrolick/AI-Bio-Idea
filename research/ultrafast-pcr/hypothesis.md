@@ -13,4 +13,5 @@ PCR is the single most common molecular biology technique. Every lab runs dozens
 - Does polymerase activity keep up at these speeds (enzyme kinetics limit)?
 - What readout method works at nanoliter scale?
 
-## Status: EXPLORING
+## Status: PRUNED
+**Reason**: Sub-5-minute photonic PCR is well-published (Sung 2015, Park 2022, Han 2024). NextGenPCR sells 2-minute commercial system. Wittwer achieved 14.7-second PCR in 2015. Field has 4+ review papers in 2025 alone. Insufficient originality.

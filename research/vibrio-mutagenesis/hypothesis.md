@@ -12,4 +12,5 @@ Deep mutational scanning (DMS) is critical for understanding protein function, d
 - How do you couple mutagenesis with high-throughput readout in this organism?
 - Does the fast doubling time introduce unique challenges (repair overwhelm, fitness effects)?
 
-## Status: EXPLORING
+## Status: PRUNED
+**Reason**: VinORep (Tian/Chin lab, Feb 2026 bioRxiv) directly implements orthogonal continuous evolution in V. natriegens. ~10^-4 substitutions/base/gen. Evolved new function in 16 hours. Core hypothesis is preempted.

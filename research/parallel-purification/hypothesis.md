@@ -12,4 +12,5 @@ Protein purification is a multi-hour to multi-day process that follows every exp
 - Throughput: can you purify enough protein for downstream assays?
 - How does purity compare to column chromatography?
 
-## Status: EXPLORING
+## Status: PRUNED
+**Reason**: Acoustic radiation force cannot manipulate proteins directly (too small). His-tag purification is already 4-5 minutes commercially (VFD-IMAC, Capturem). Problem is solved; proposed mechanism has fundamental physics limitation.

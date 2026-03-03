@@ -1,10 +1,12 @@
 # Validation Checks - Rapid Gene Cloning
 
 ## Originality
-- [ ] Searched literature for existing cell-free cloning approaches
+- [x] Searched literature for existing cell-free cloning approaches
 - [ ] Confirmed this specific approach is not already published
-- [ ] Identified what makes this distinct from Gibson Assembly, Golden Gate, etc.
+- [x] Identified what makes this distinct from Gibson Assembly, Golden Gate, etc.
 - [ ] No existing commercial product does this exact thing
+
+**NOTE:** HyperXpress (2022) and One-Pot Golden Gate + TX-TL (2025) already do assembly + functional expression in one pot. The novel angle must be SEQUENCE VERIFICATION integrated into the cell-free pipeline — coupling nanopore QC inline with assembly. Need to validate this angle further.
 
 ## Technical Tractability
 - [ ] Core chemistry/biology is sound (cite specific papers)
